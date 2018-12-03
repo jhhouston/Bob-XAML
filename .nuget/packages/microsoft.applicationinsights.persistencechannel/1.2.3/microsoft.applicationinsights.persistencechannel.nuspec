@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ApplicationInsights.PersistenceChannel</id>
+    <version>1.2.3</version>
+    <title>Application Insights Persisted HTTP channel</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=391182</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=392727</projectUrl>
+    <iconUrl>http://appanacdn.blob.core.windows.net/cdn/icons/aic.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This channel provides a peristant channel to Application Insights that will preserve telemetry in offline scenarios. This is a dependent package, for a best experience please install the platform specific package.</description>
+    <releaseNotes>For the release notes please follow http://go.microsoft.com/fwlink/?LinkId=535037</releaseNotes>
+    <copyright>Copyright c Microsoft. All Rights Reserved.</copyright>
+    <tags>Analytics ApplicationInsights Telemetry</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Microsoft.ApplicationInsights" version="1.2.3" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Diagnostics.Tracing.EventSource.Redist" version="1.1.24" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.ApplicationInsights" version="1.2.3" />
+      </group>
+      <group targetFramework="WindowsPhone8.0">
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.ApplicationInsights" version="1.2.3" />
+      </group>
+      <group targetFramework=".NETPortable0.0-win81+wpa81">
+        <dependency id="Microsoft.ApplicationInsights" version="1.2.3" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
